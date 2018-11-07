@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Notification Test 8 - Shared worker - random quotes - target last first open window - Ping/Pong</title>
+  <meta name="description" content="Test 5 notification | Envoi de message du shared-worker vers porcess parent pour afficher une notification avec un lien vers la fenètre parente">
+  <meta name="PL" content="Cocoom">
+
+</head>
+
+<body>
+  <div>
+      <h1>Worker test notification 8 - with acknowledgement</h1>
+      <p>Envoi de message du shared-worker vers process parent pour afficher une notification avec un lien vers la fenètre parente</p>
+      <p>Afin de garantir que la fenètre qui envoie les notif n'est pas fermée, le sharedworker envoi un premier message qui nécessitera une réponse de la part de la fe,nère active. La notification sera alors envoyée à cette fenètre</p>
+      <a href="testWorker8SecondTab.html" target="_blank">Ouvrir la seconde fenètre qui partage le worker</a>
+  </div>
+
+    <script src="test8.js"></script>
+</body>
+</html>
